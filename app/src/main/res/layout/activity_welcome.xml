@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.example.cyberboy.homeautomation.Welcome">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hall"
+        android:layout_marginTop="25dp"
+        android:textColor="#FFF"
+        android:background="@drawable/border"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView7" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/round"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/led"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/imageButton2" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/round"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/tubelight"
+            android:layout_marginEnd="43dp"
+            android:layout_alignTop="@+id/imageButton"
+            android:layout_alignParentEnd="true" />
+
+    <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/round"
+            app:srcCompat="@drawable/fan"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="39dp"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentStart="true" />
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/round"
+        app:srcCompat="@drawable/ac"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton1" />
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/round"
+        app:srcCompat="@drawable/cctv"
+        android:layout_below="@+id/imageButton2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello User"
+        android:textAlignment="viewEnd"
+        android:textColor="#FFF"
+        android:background="@drawable/hellouser"
+        android:textSize="22sp"
+        android:padding="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
